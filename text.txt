@@ -1,0 +1,3 @@
+npm install --save-dev electron
+npm i --save react react-dom
+@babel/core @babel/preset-env @babel/preset-react css-loader style-loader sass-loader sass webpack-cli redux react-redux @reduxjs/toolkit

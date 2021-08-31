@@ -1,0 +1,13 @@
+.main_screen{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ align-items: center;
+ margin-top: 2em;
+ height: 100%;
+ .money{
+  font-size: 2em;
+  font-weight: 700;
+ }
+
+}

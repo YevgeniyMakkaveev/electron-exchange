@@ -1,7 +1,8 @@
 import React from "react";
 import { money } from "../files/money";
+import "./Selector.scss";
 
-const Selector = ({ getMoney }) => {
+const Select = ({ getMoney }) => {
   const list = Object.entries(money);
   const currencyContent = list.map((obj) => (
     <option key={obj[0]} value={obj[0]}>
@@ -9,12 +10,15 @@ const Selector = ({ getMoney }) => {
     </option>
   ));
   return (
-    <div>
+    <div className="selector">
       <h2>Currency Selector</h2>
-      <select onChange={(e) => getMoney(e.target.value)}>
+      <select
+        className="exchange_list"
+        onChange={(e) => getMoney(e.target.value)}
+      >
         {currencyContent}
       </select>
     </div>
   );
 };
-export default Selector;
+export default Select;

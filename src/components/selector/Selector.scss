@@ -1,0 +1,14 @@
+.selector{
+ // background-color: #0b0a08;
+ background-image: url(../../design/img/dolla.jpg);
+ background-color: rgba($color: #000000, $alpha: 0.4);
+ background-blend-mode: multiply;
+ background-size: contain;
+ color: white;
+  text-shadow: 0.02em 0.02em 0.02em rgb(8, 8, 8);
+ font-size: 1.5em;
+ height: auto;
+ .exchange_list{
+  font-size: 1em;
+ }
+}

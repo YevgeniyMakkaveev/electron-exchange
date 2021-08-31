@@ -1,3 +1,31 @@
-.test{
- color: aquamarine;
+*{
+ margin: 0;
+ padding: 0;
+}
+.app{
+ width: 100%;
+ min-height: 100vh;
+ 
+ .label__wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('../../design/img/logo.jpg');
+  background-position: center;
+  background-size: cover;
+ .label {
+  font-weight: 700;
+  font-size: 3em;
+  margin: 2em auto;
+  color: lime;
+  text-shadow: 0.022em 0.022em 0.022em rgb(8, 8, 8);
+ }
+ }
+
+.main{
+ display: flex;
+height: 100%;
+min-height: 90vh;
+align-items: stretch;
+}
 }

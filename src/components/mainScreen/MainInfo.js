@@ -5,8 +5,10 @@ import "./MainInfo.scss";
 
 const MainScreen = ({ currency }) => {
   const { currencyList } = useSelector((state) => state.table);
-  console.log(currencyList);
+
   if (!currency) return <div className="main_screen"></div>;
+  else if (!currencyList)
+    return <div className="main_screen"> Error no currency list </div>;
 
   const exchange = "USD" + currency;
   const key = Object.keys(country).filter(function (key) {
